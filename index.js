@@ -7,6 +7,9 @@ app.use(express.json());
 app.get('/', (req, res) => {
     res.status(200).send('Hello Pardeep' );
 });
+app.get('/api', (req, res) => {
+    res.status(200).send('Hello Pardeep, i am a developer ' );
+});
 
 // Start the server
 app.listen(port, () => {
